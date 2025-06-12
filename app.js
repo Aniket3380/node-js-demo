@@ -1,3 +1,2 @@
-module.exports={
-    x:10
-}
+const data={name:"aniket",email:"aniket@gmail.com"}
+module.exports=data

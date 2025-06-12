@@ -1,10 +1,9 @@
-// const todo=require("fs")
-// const app=require('./app')
+const data=require("./app")
+
+
 const http=require("http")
-// console.log(app.x)
-// todo.writeFileSync("abc","hello aniket")
-http.createServer((req,res)=>
-{
-    res.write("hello aniket ")
-    res.end();
+http.createServer((req,resp)=>{
+ resp.writeHead(200,{'content-type':'application\json'});
+ resp.write(JSON.stringify(data));
+ resp.end();  
 }).listen(3000);
