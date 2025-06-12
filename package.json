@@ -1,0 +1,19 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "node learing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniket3380/node-js-demo.git"
+  },
+  "author": "aniket",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aniket3380/node-js-demo/issues"
+  },
+  "homepage": "https://github.com/Aniket3380/node-js-demo#readme"
+}
