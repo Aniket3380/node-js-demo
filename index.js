@@ -1,9 +1,15 @@
-const data=require("./app")
+const getdata=require('./mongodb')
+// getdata().then((res)=>{
+//      res.find({}).toArray().then((data)=>{
+//        console.log(data)
+//      })
+// })
+// console.log(getdata())
 
+const main = async ()=>{
+  let data=await getdata()
+  data=await data.find().toArray()
+  console.log(data)
 
-const http=require("http")
-http.createServer((req,resp)=>{
- resp.writeHead(200,{'content-type':'application\json'});
- resp.write(JSON.stringify(data));
- resp.end();  
-}).listen(3000);
+}
+main()
