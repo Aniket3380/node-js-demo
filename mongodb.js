@@ -1,11 +1,13 @@
-const{MongoClient}=require('mongodb')
-const url="mongodb://localhost:27017";
+const {MongoClient} =require('mongodb')
+const path="mongodb://localhost:27017"
 const database="e-com"
-const client=new MongoClient(url)
+const client=new MongoClient(path)
 
 async function getdata(){
-  let result= await client.connect()
-  let db=result.db(database)
-  return db.collection('product')
+    const result=await client.connect()
+    const db=result.db(database)
+    return db.collection('product')
+ 
+    
 }
 module.exports=getdata
